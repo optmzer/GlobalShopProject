@@ -3,7 +3,7 @@ using System;
 
 namespace GlobalShopProject.Data.Models
 {
-    class ApplicationRole : IdentityRole
+    public class ApplicationRole : IdentityRole
     {
         public ApplicationRole() : base() { }
 

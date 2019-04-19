@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using GlobalShopProject.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using GlobalShopProject.Data.Models;
 
 namespace GlobalShopProject
 {
