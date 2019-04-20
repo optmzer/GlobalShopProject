@@ -21,4 +21,9 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Basket\" />
+    <Folder Include="Models\Order\" />
+  </ItemGroup>
+
 </Project>

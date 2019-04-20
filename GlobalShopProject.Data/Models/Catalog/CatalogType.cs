@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GlobalShopProject.Data.Models.Catalog
+﻿namespace GlobalShopProject.Data.Models.Catalog
 {
     public class CatalogType: BaseEntity
     {
+        public string ItemType { get; set; }
     }
 }
