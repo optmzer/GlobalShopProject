@@ -12,6 +12,11 @@ namespace GlobalShopProject.Data.Models.Catalog
         public decimal Price { get; set; }
         public string PictureUri { get; set; }
         public DateTime DateIntroduced { get; set; } = DateTime.Now;
+        
+        // Freign Keys
+        public int CatalogBrandsId { get; set; }
+        public int CatalogTypesId { get; set; }
+
         // Product Branding and Types
         public virtual CatalogBrand CatalogBrands {get; set;}
         public virtual CatalogType CatalogTypes{get; set;}
