@@ -2,14 +2,17 @@
 
 <div class="card" style="width: 18rem;">
     <div class="card-header">
-        Featured
+        <h5>
+            @Model.ItemName
+        </h5>
     </div>
     <img class="card-img-top" src=@Model.ItemPictureUri alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title">Title: @Model.ItemName</h5>
+        @*<h5 class="card-title">Title: @Model.ItemName</h5>*@
         <p class="card-text">@Model.ItemDescription</p>
     </div>
     <div class="card-footer">
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <span>@Model.Price.ToString("C")</span>
+        <a href="#" class="btn btn-primary">Add To Cart</a>
     </div>
 </div>

@@ -12,6 +12,7 @@ namespace GlobalShopProject.Controllers
     {
         public IActionResult Index()
         {
+            // Populate initial model.
             return View();
         }
 

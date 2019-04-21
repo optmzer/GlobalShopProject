@@ -2,43 +2,54 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="row home-carousel-row">
-    <div class="col-sm-1 col-md-1"> </div>
-    
-    <div id="home-carousel" 
-         class="carousel slide col-xs-12 col-sm-10 col-md-10" 
-         data-ride="carousel">
-        @* Slides *@
-        <div class="carousel-inner">
-            <div class="carousel-item home-carousel-item active">
-                <img class="d-block home-carousel-img w-100"
-                     src="~/img/Carousel/Clay/arid-barren-clay-1710813-narrow.jpg" alt="First Slide" />
+<div class="container">
+
+    <div class="row">
+        @*<div class="col-sm-1 col-md-1"> </div>*@
+
+        <div id="home-carousel"
+             class="carousel slide col-xs-12 col-sm-12 col-md-12"
+             data-ride="carousel">
+            @* Slides *@
+            <div class="carousel-inner">
+                <div class="carousel-item home-carousel-item active">
+                    <img class="d-block home-carousel-img w-100"
+                         src="~/img/Carousel/Clay/arid-barren-clay-1710813-narrow.jpg" alt="First Slide" />
+                </div>
+                <div class="carousel-item home-carousel-item">
+                    <img class="d-block home-carousel-img w-100"
+                         src="~/img/Carousel/Clay/artisan-artist-clay-1675993-narrow.jpg" alt="Second Slide" />
+                </div>
+                <div class="carousel-item home-carousel-item">
+                    <img class="d-block home-carousel-img w-100"
+                         src="~/img/Carousel/Clay/antique-art-arts-and-crafts-905844-narrow.jpg" alt="Third slide" />
+                </div>
             </div>
-            <div class="carousel-item home-carousel-item">
-                <img class="d-block home-carousel-img w-100"
-                     src="~/img/Carousel/Clay/artisan-artist-clay-1675993-narrow.jpg" alt="Second Slide" />
-            </div>
-            <div class="carousel-item home-carousel-item">
-                <img class="d-block home-carousel-img w-100"
-                     src="~/img/Carousel/Clay/antique-art-arts-and-crafts-905844-narrow.jpg" alt="Third slide" />
-            </div>
+
+            @* Left and Right Controls *@
+            <a href="#home-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Prev</span>
+            </a>
+
+            <a href="#home-carousel" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
         </div>
-
-        @* Left and Right Controls *@
-        <a href="#home-carousel" class="carousel-control-prev" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Prev</span>
-        </a>
-
-        <a href="#home-carousel" class="carousel-control-next" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-
+        @*<div class="col-sm-1 col-md-1"> </div>*@
     </div>
-    <div class="col-sm-1 col-md-1"> </div>
-</div>
-<div class="home-shopping-list">
-    @* Shopping list of items *@
-    @* @await Html.PartialAsync("_PartialName", customeViewDataModel) *@
+    <div class="row home-shopping-list">
+        @* Shopping list of items *@
+        @* Loop through view model and populate partial *@
+
+        @await Html.PartialAsync("_CatalogItemPartial", new CatalogItemViewModel {
+           Id = 1,
+           ItemName = "Tea pot set",
+           ItemDescription = "Awesome hand made teapot set ...",
+           ItemPictureUri = "/img/CatalogItems/ceramics-cups-porcelain-2133982.jpg",
+           Price = 50.00M
+           })
+    </div>
 </div>
