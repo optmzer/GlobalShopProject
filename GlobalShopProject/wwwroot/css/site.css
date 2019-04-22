@@ -61,35 +61,47 @@ body {
 
 /* HORIZONTAL SCROLL BAR */
 
-.h-scroll-bar{
+.h-scroll-bar {
     overflow-y: auto;
     overflow-x: hidden;
     white-space: nowrap;
     margin-left: -14px;
     /*padding-right: -14px;*/
+    display: flex;
+    align-items: center;
 }
 
 .h-scroll-bar-item {
-    display: inline-block;
+    /*display: inline-block;*/
     text-align: center;
     padding: 14px;
 }
 
-.h-scroll-bar-nav{
-    height: 2em;
-    width: 2em;
+.h-carousel-controls{
+    /*display: inline-block;*/
+}
+
+.h-scroll-bar-nav {
+    /*vertical-align: central;*/
+    /*height: 2em;
+    width: 2em;*/
     background-color: whitesmoke;
     border-radius: 50%;
-    font-size: 2em;
-    text-align: center;
+    /*text-align: center;*/
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .h-scroll-bar-nav i {
-    margin-top: 0.46em;
+    /*margin-top: 0.46em;*/
+    width: 2em;
+    height: 2em;
+    font-size: 2em;
 }
 
-.h-scroll-bar-left{
-    margin-left: -0.1em;
+.h-scroll-bar-left {
+    /*margin-left: -0.1em;*/
+    padding-left: .65em;
+    padding-top: 0.5em;
 }
 
 .h-scroll-bar-right{
