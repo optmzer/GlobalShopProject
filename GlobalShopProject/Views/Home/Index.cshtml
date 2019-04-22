@@ -40,16 +40,13 @@
         </div>
         @*<div class="col-sm-1 col-md-1"> </div>*@
     </div>
-    <div class="row home-shopping-list">
-        @* Shopping list of items *@
-        @* Loop through view model and populate partial *@
-
-        @await Html.PartialAsync("_CatalogItemPartial", new CatalogItemViewModel {
-           Id = 1,
-           ItemName = "Tea pot set",
-           ItemDescription = "Awesome hand made teapot set ...",
-           ItemPictureUri = "/img/CatalogItems/ceramics-cups-porcelain-2133982.jpg",
-           Price = 50.00M
+    
+    <div class="row">
+        <div class="row">
+            <h4>Trending</h4>
+        </div>
+        @await Html.PartialAsync("_CarouselPartial", new CarouselViewModel {
+           //TODO : define and fill in the model
            })
     </div>
 </div>

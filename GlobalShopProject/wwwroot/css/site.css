@@ -58,3 +58,40 @@ body {
 .home-carousel-row {
     height: 400px !important;
 }
+
+/* HORIZONTAL SCROLL BAR */
+
+.h-scroll-bar{
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-left: -14px;
+    /*padding-right: -14px;*/
+}
+
+.h-scroll-bar-item {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+}
+
+.h-scroll-bar-nav{
+    height: 2em;
+    width: 2em;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.h-scroll-bar-nav i {
+    margin-top: 0.46em;
+}
+
+.h-scroll-bar-left{
+    margin-left: -0.1em;
+}
+
+.h-scroll-bar-right{
+    margin-right: -0.1em;
+}

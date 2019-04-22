@@ -1,0 +1,64 @@
+﻿@model CarouselViewModel
+
+<div class="h-scroll-bar">
+    <div id="h-scroll-bar-prev" class="h-scroll-bar-nav">
+        <i class="fa fa-chevron-left h-scroll-bar-left"></i>
+    </div>
+    <div class="h-scroll-bar-item">
+        @await Html.PartialAsync("_CatalogItemPartial", new CatalogItemViewModel {
+         Id = 1,
+         ItemName = "Tea pot set",
+         ItemDescription = "Awesome hand made teapot set ...",
+         ItemPictureUri = "/img/CatalogItems/ceramics-cups-porcelain-2133982.jpg",
+         Price = 50.00M
+         })
+    </div>
+    <div class="h-scroll-bar-item">
+        @await Html.PartialAsync("_CatalogItemPartial", new CatalogItemViewModel {
+          Id = 1,
+          ItemName = "Tea pot set",
+          ItemDescription = "Awesome hand made teapot set ...",
+          ItemPictureUri = "/img/CatalogItems/ceramics-cups-porcelain-2133982.jpg",
+          Price = 50.00M
+          })
+    </div>
+    <div class="h-scroll-bar-item">
+        @await Html.PartialAsync("_CatalogItemPartial", new CatalogItemViewModel {
+          Id = 1,
+          ItemName = "Tea pot set",
+          ItemDescription = "Awesome hand made teapot set ...",
+          ItemPictureUri = "/img/CatalogItems/ceramics-cups-porcelain-2133982.jpg",
+          Price = 50.00M
+          })
+    </div>
+    <div class="h-scroll-bar-item">
+        @await Html.PartialAsync("_CatalogItemPartial", new CatalogItemViewModel {
+          Id = 1,
+          ItemName = "Tea pot set",
+          ItemDescription = "Awesome hand made teapot set ...",
+          ItemPictureUri = "/img/CatalogItems/ceramics-cups-porcelain-2133982.jpg",
+          Price = 50.00M
+          })
+    </div>
+    <div class="h-scroll-bar-item">
+        @await Html.PartialAsync("_CatalogItemPartial", new CatalogItemViewModel {
+         Id = 1,
+         ItemName = "Tea pot set",
+         ItemDescription = "Awesome hand made teapot set ...",
+         ItemPictureUri = "/img/CatalogItems/ceramics-cups-porcelain-2133982.jpg",
+         Price = 50.00M
+         })
+    </div>
+    <div class="h-scroll-bar-item">
+        @await Html.PartialAsync("_CatalogItemPartial", new CatalogItemViewModel {
+              Id = 1,
+              ItemName = "Tea pot set",
+              ItemDescription = "Awesome hand made teapot set ...",
+              ItemPictureUri = "/img/CatalogItems/ceramics-cups-porcelain-2133982.jpg",
+              Price = 50.00M
+              })
+    </div>
+    <div id="h-scroll-bar-next" class="h-scroll-bar-nav">
+        <i class="fa fa-chevron-right h-scroll-bar-right"></i>
+    </div>
+</div>
